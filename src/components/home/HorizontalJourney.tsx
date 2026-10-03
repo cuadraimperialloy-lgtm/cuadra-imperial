@@ -28,7 +28,7 @@ const JOURNEY_STEPS = [
 
 export default function HorizontalJourney() {
   return (
-    <section className="h-[100dvh] w-full snap-start shrink-0 bg-[#040814] text-brand-cal relative flex flex-col group overflow-hidden">
+    <section className="h-[100dvh] w-full snap-start shrink-0 bg-[#040405] text-brand-cal relative flex flex-col group overflow-hidden">
       
       {/* Absolute intro text block */}
       <div className="absolute top-8 md:top-16 left-6 md:left-12 z-20 pointer-events-none drop-shadow-lg">

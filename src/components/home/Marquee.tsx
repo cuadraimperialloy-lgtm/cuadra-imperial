@@ -11,17 +11,17 @@ export default function Marquee() {
       >
         <div className="flex gap-8 md:gap-16 px-4 md:px-8 items-center text-[#1D1D1F]">
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Importación Directa de Países Bajos</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Certificación KFPS</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Linaje Imperial</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Importación Directa de Países Bajos</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Certificación KFPS</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
           <span className="font-sans text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] drop-shadow-sm">Linaje Imperial</span>
-          <span className="w-1 h-1 rounded-full bg-[#040814]/40" />
+          <span className="w-1 h-1 rounded-full bg-[#040405]/40" />
         </div>
       </motion.div>
     </section>

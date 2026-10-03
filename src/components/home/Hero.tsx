@@ -1,11 +1,13 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, ShieldCheck, FileCheck, Truck, MapPin, MessageCircle } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { ArrowRight, ShieldCheck, FileCheck, Truck, ShoppingBag, MessageCircle, Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-[#0B1528] overflow-hidden border-b border-[#B8860B]/20">
+    <section className="relative w-full bg-[#09090B] overflow-hidden border-b border-[#D4AF37]/20 pt-8 sm:pt-12">
       <div className="flex flex-col lg:flex-row min-h-[auto] lg:min-h-[85vh]">
         
         {/* Left Text Content */}
@@ -16,9 +18,9 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             {/* Top Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#B8860B]/15 border border-[#B8860B]/40 mb-4 sm:mb-6">
-              <span className="w-2 h-2 rounded-full bg-[#B8860B] animate-pulse" />
-              <span className="text-[#B8860B] tracking-[0.2em] uppercase text-[10px] sm:text-xs font-semibold font-sans">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D4AF37]/15 border border-[#D4AF37]/40 mb-4 sm:mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#D4AF37] animate-pulse" />
+              <span className="text-[#D4AF37] tracking-[0.22em] uppercase text-[10px] sm:text-xs font-semibold font-sans">
                 Importación & Venta Directa en México
               </span>
             </div>
@@ -26,83 +28,70 @@ export default function Hero() {
             {/* Sales Headline */}
             <h1 className="text-3xl sm:text-5xl lg:text-[62px] font-heading font-normal text-white leading-[1.1] mb-4 sm:mb-6">
               Caballos Frisones de <br className="hidden sm:inline" />
-              <span className="italic text-[#B8860B] font-script text-4xl sm:text-6xl lg:text-[76px] pr-2">Pura Raza</span>
+              <span className="italic text-[#D4AF37] font-script text-4xl sm:text-6xl lg:text-[76px] pr-2">Pura Raza</span>
               en Venta
             </h1>
 
             <p className="text-white/80 max-w-xl text-sm sm:text-base lg:text-lg font-light leading-relaxed mb-6 sm:mb-8">
-              Adquiere un ejemplar frisón de élite con registro oficial de la <strong>KFPS de los Países Bajos</strong>, 14 radiografías limpias y entrega puerta a puerta garantizada con seguro en cualquier estado de México.
+              Adquiere un ejemplar frisón de élite con registro oficial de la <strong>KFPS de los Países Bajos</strong>, 14 radiografías limpias y entrega puerta a puerta garantizada con seguro clavo a clavo en todo México.
             </p>
             
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-10">
-              <a 
-                href="#inventario"
-                className="px-6 py-3.5 sm:px-8 sm:py-4 bg-[#B8860B] hover:bg-white text-[#0B1528] rounded-md text-center font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2.5 shadow-[0_10px_25px_rgba(184,134,11,0.3)] transition-all duration-300"
+              <Link 
+                href="/ejemplares"
+                className="px-6 py-4 bg-[#D4AF37] hover:bg-[#E8C678] text-[#050507] rounded-xl text-center font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2.5 shadow-[0_10px_25px_rgba(212,175,55,0.3)] transition-all duration-300 active:scale-95"
               >
-                <span>Ver Caballos en Venta</span>
+                <span>Ver Caballos en Venta (Teaser)</span>
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </Link>
 
-              <a 
-                href="https://wa.me/523326060218?text=Hola,%20me%20interesa%20comprar%20un%20caballo%20fris%C3%B3n.%20%C2%BFQu%C3%A9%20ejemplares%20tienen%20disponibles?"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-3.5 sm:px-8 sm:py-4 bg-white/5 border border-[#B8860B]/40 hover:bg-[#B8860B]/15 text-[#B8860B] hover:text-white transition-colors uppercase tracking-widest text-xs font-bold rounded-md flex items-center justify-center gap-2"
+              <Link 
+                href="/tienda"
+                className="px-6 py-4 bg-white/5 border border-[#D4AF37]/40 hover:bg-[#D4AF37]/15 text-white hover:text-[#D4AF37] transition-colors uppercase tracking-widest text-xs font-bold rounded-xl flex items-center justify-center gap-2"
               >
-                <MessageCircle className="w-4 h-4" />
-                <span>Cotizar por WhatsApp</span>
-              </a>
+                <ShoppingBag className="w-4 h-4 text-[#D4AF37]" />
+                <span>Tienda de Guarnicionería</span>
+              </Link>
             </div>
 
             {/* Trust Badges */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-6 border-t border-white/10 text-white/70 text-xs">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-6 border-t border-white/10 text-white/70 text-xs">
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-[#B8860B] shrink-0" />
-                <span className="text-[11px] sm:text-xs">100% KFPS Holanda</span>
+                <ShieldCheck className="w-5 h-5 text-emerald-400 shrink-0" />
+                <span>14 Rx Limpias Grado 1</span>
               </div>
               <div className="flex items-center gap-2">
-                <FileCheck className="w-4 h-4 text-[#B8860B] shrink-0" />
-                <span className="text-[11px] sm:text-xs">14 Rx Limpias Cat. 1</span>
+                <FileCheck className="w-5 h-5 text-[#D4AF37] shrink-0" />
+                <span>Registro Oficial KFPS</span>
               </div>
               <div className="flex items-center gap-2">
-                <Truck className="w-4 h-4 text-[#B8860B] shrink-0" />
-                <span className="text-[11px] sm:text-xs">Entrega en Todo México</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#B8860B] shrink-0" />
-                <span className="text-[11px] sm:text-xs">Cuadra en Guadalajara</span>
+                <Truck className="w-5 h-5 text-blue-400 shrink-0" />
+                <span>Entrega en Van VIP</span>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Right Media: Purebred Black Friesian Horse Video Only */}
-        <div className="w-full lg:w-5/12 relative h-[280px] sm:h-[360px] lg:h-auto min-h-full bg-black overflow-hidden">
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover object-center scale-105"
-            poster="/images/tjerk.jpg"
-          >
-            {/* 100% Majestic Black Friesian Horse Video */}
-            <source src="https://cdn.coverr.co/videos/coverr-a-black-horse-running-in-the-snow-3733/1080p.mp4" type="video/mp4" />
-          </video>
+        {/* Right Photo */}
+        <div className="w-full lg:w-5/12 relative min-h-[400px] lg:min-h-full bg-black">
+          <Image
+            src="/images/hero.jpg"
+            alt="Semental Frisón Imperial"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#09090B] via-transparent to-transparent" />
           
-          {/* Edge Blend Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1528] via-transparent to-transparent hidden lg:block opacity-90" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1528] via-transparent to-transparent lg:hidden opacity-90" />
-
-          {/* Floating Badge */}
-          <div className="absolute bottom-4 right-4 z-20 bg-[#0B1528]/90 backdrop-blur-md px-3.5 py-2 rounded-lg border border-[#B8860B]/40 shadow-xl">
-            <span className="text-[10px] text-[#B8860B] font-bold uppercase tracking-wider block">
-              Pureza KFPS
+          {/* Floating Emblem Tag */}
+          <div className="absolute bottom-6 right-6 p-4 rounded-2xl bg-[#050507]/90 border border-[#D4AF37]/40 backdrop-blur-md max-w-xs shadow-2xl">
+            <span className="text-[10px] text-[#D4AF37] uppercase tracking-widest font-bold block mb-1">
+              Hacienda Guadalajara
             </span>
-            <span className="text-white text-[11px] font-light">
-              Frisones de Alta Doma
-            </span>
+            <p className="text-white text-xs font-heading">
+              Sementales seleccionados en Frisia para exhibición y charrería de gala.
+            </p>
           </div>
         </div>
 

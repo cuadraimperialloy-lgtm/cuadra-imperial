@@ -1,24 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0B1528; /* Cal de Hacienda */
-  --foreground: #F8FAFC; /* Negro Charro */
+  --background: #09090B; /* Negro Imperial Profundo */
+  --foreground: #F4F4F5; /* Blanco Nieve */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   
-  --color-brand-negro: #F8FAFC; /* Negro Charro */
-  --color-brand-oro: #B8862B; /* Oro Botonadura */
-  --color-brand-cal: #0B1528; /* Cal de Hacienda */
-  --color-brand-arena: #1E293B; /* Arena de Lienzo */
-  --color-brand-cuero: #B8860B; /* Cuero Piteado */
-  --color-brand-gris: #475569; /* Gris Cantera */
+  --color-brand-negro: #000000;
+  --color-brand-oro: #D4AF37;
+  --color-brand-cal: #09090B;
+  --color-brand-arena: #141417;
+  --color-brand-cuero: #C5A059;
+  --color-brand-gris: #71717A;
   
-  /* Additional Golds from manual */
-  --color-brand-oro-espuela: #D9B25A;
-  --color-brand-oro-viejo: #8A6220;
+  --color-brand-oro-espuela: #E8C678;
+  --color-brand-oro-viejo: #996615;
   
   --font-sans: var(--font-figtree);
   --font-heading: var(--font-poppins);
@@ -33,7 +32,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Base resets */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), sans-serif;
 }

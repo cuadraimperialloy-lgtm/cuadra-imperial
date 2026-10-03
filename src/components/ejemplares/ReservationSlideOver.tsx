@@ -24,7 +24,7 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-[#040814]/80 backdrop-blur-sm z-[100]"
+            className="fixed inset-0 bg-[#040405]/80 backdrop-blur-sm z-[100]"
           />
           
           <motion.div
@@ -32,7 +32,7 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", damping: 30, stiffness: 300 }}
-            className="fixed top-0 right-0 h-full w-full max-w-lg bg-[#0B1528] shadow-2xl z-[101] flex flex-col border-l border-brand-oro/30/20"
+            className="fixed top-0 right-0 h-full w-full max-w-lg bg-[#09090B] shadow-2xl z-[101] flex flex-col border-l border-brand-oro/30/20"
           >
             {/* Header */}
             <div className="px-8 py-6 flex items-center justify-between border-b border-brand-oro/30/20">
@@ -47,14 +47,14 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
               
               {/* Product Summary */}
               <div className="flex gap-4 items-center mb-8 p-4 bg-white/5/50 rounded-2xl border border-brand-oro/30/10">
-                <div className="w-20 h-20 rounded-xl bg-[#040814] overflow-hidden relative shrink-0">
+                <div className="w-20 h-20 rounded-xl bg-[#040405] overflow-hidden relative shrink-0">
                   <img src={horse.images[0]} className="w-full h-full object-cover" alt="Caballo" />
                 </div>
                 <div className="flex-1">
                   <span className="text-[10px] uppercase tracking-widest font-bold text-brand-oro">Ejemplar Seleccionado</span>
                   <h3 className="font-heading text-xl font-bold text-white">{horse.name}</h3>
                   <div className="flex justify-between items-center mt-1">
-                     <p className="font-sans text-xs text-white/60">{horse.level}</p>
+                     <p className="font-sans text-xs text-white/85">{horse.level}</p>
                      <p className="font-sans text-xs font-bold text-white">{formatMoney(total)}</p>
                   </div>
                 </div>
@@ -68,11 +68,11 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
 
                   <div className="space-y-4">
                     <div>
-                      <label className="text-white/60 text-xs font-bold uppercase tracking-widest pl-2">Nombre Completo</label>
+                      <label className="text-white/85 text-xs font-bold uppercase tracking-widest pl-2">Nombre Completo</label>
                       <input type="text" className="w-full bg-white/5 border border-brand-oro/30/20 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-brand-oro focus:ring-1 transition-colors" />
                     </div>
                     <div>
-                      <label className="text-white/60 text-xs font-bold uppercase tracking-widest pl-2">WhatsApp</label>
+                      <label className="text-white/85 text-xs font-bold uppercase tracking-widest pl-2">WhatsApp</label>
                       <input type="tel" className="w-full bg-white/5 border border-brand-oro/30/20 rounded-xl px-5 py-3 text-white focus:outline-none focus:border-brand-oro focus:ring-1 transition-colors" />
                     </div>
                   </div>
@@ -100,12 +100,12 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
                       onClick={() => setPaymentMethod('transfer')}
                       className={`flex items-center gap-4 p-4 rounded-xl border-2 transition-all text-left ${paymentMethod === 'transfer' ? 'border-brand-oro bg-brand-oro/5' : 'border-brand-oro/30/20 bg-white/5 hover:border-brand-oro/30/50'}`}
                     >
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center ${paymentMethod === 'transfer' ? 'bg-brand-oro text-white' : 'bg-black/5 text-white/50'}`}>
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center ${paymentMethod === 'transfer' ? 'bg-brand-oro text-white' : 'bg-black/5 text-white/75'}`}>
                         <Building2 className="w-5 h-5" />
                       </div>
                       <div>
                         <p className="font-bold text-white text-sm">Transferencia SPEI / Wire</p>
-                        <p className="text-xs text-white/60 mt-0.5">Sin comisiones adicionales</p>
+                        <p className="text-xs text-white/85 mt-0.5">Sin comisiones adicionales</p>
                       </div>
                     </button>
 
@@ -113,12 +113,12 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
                       onClick={() => setPaymentMethod('paypal')}
                       className={`flex items-center gap-4 p-4 rounded-xl border-2 transition-all text-left ${paymentMethod === 'paypal' ? 'border-[#003087] bg-[#003087]/5' : 'border-brand-oro/30/20 bg-white/5 hover:border-brand-oro/30/50'}`}
                     >
-                      <div className={`w-10 h-10 rounded-full flex items-center justify-center ${paymentMethod === 'paypal' ? 'bg-[#003087] text-white' : 'bg-black/5 text-white/50'}`}>
+                      <div className={`w-10 h-10 rounded-full flex items-center justify-center ${paymentMethod === 'paypal' ? 'bg-[#003087] text-white' : 'bg-black/5 text-white/75'}`}>
                         <CreditCard className="w-5 h-5" />
                       </div>
                       <div>
                         <p className="font-bold text-[#003087] text-sm">PayPal</p>
-                        <p className="text-xs text-white/60 mt-0.5">Paga con tarjeta de crédito o débito</p>
+                        <p className="text-xs text-white/85 mt-0.5">Paga con tarjeta de crédito o débito</p>
                       </div>
                     </button>
                   </div>
@@ -145,7 +145,7 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
             {/* Footer */}
             <div className="p-6 bg-white/5 border-t border-brand-oro/30/10">
               {step === 1 && (
-                <button onClick={() => setStep(2)} className="w-full relative overflow-hidden px-8 py-4 bg-[#040814] text-white text-center rounded-xl font-sans font-bold text-sm tracking-widest uppercase hover:-translate-y-1 transition-transform group">
+                <button onClick={() => setStep(2)} className="w-full relative overflow-hidden px-8 py-4 bg-[#040405] text-white text-center rounded-xl font-sans font-bold text-sm tracking-widest uppercase hover:-translate-y-1 transition-transform group">
                   <span className="relative z-10">Continuar al Pago</span>
                   <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-[shimmer_1s_infinite] skew-x-12" />
                 </button>
@@ -160,7 +160,7 @@ export default function ReservationSlideOver({ isOpen, onClose, horse }: { isOpe
                 </button>
               )}
               {step === 3 && (
-                <button onClick={onClose} className="w-full px-8 py-4 bg-[#040814]/5 text-white text-center rounded-xl font-sans font-bold text-sm tracking-widest uppercase hover:bg-[#040814]/10 transition-colors">
+                <button onClick={onClose} className="w-full px-8 py-4 bg-[#040405]/5 text-white text-center rounded-xl font-sans font-bold text-sm tracking-widest uppercase hover:bg-[#040405]/10 transition-colors">
                   Cerrar Panel
                 </button>
               )}

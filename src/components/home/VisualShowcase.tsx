@@ -6,7 +6,7 @@ import { Play } from 'lucide-react';
 
 export default function VisualShowcase() {
   return (
-    <section className="min-h-[100dvh] w-full bg-[#0B1528] overflow-hidden snap-start shrink-0 flex items-center relative py-20">
+    <section className="min-h-[100dvh] w-full bg-[#09090B] overflow-hidden snap-start shrink-0 flex items-center relative py-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full">
         
         {/* Text Introduction - Warm Theme */}

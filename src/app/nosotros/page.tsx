@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function NosotrosPage() {
   return (
-    <div className="min-h-screen bg-[#0B1528] pt-32 pb-24">
+    <div className="min-h-screen bg-[#09090B] pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">

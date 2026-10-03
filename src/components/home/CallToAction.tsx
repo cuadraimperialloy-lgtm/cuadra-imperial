@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function CallToAction() {
   return (
-    <section className="min-h-[100dvh] w-full bg-[#040814] overflow-hidden snap-start shrink-0 flex items-center relative py-20">
+    <section className="min-h-[100dvh] w-full bg-[#040405] overflow-hidden snap-start shrink-0 flex items-center relative py-20">
       
       {/* Subtle Background Glows */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-oro/10 blur-[150px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/3" />

@@ -26,7 +26,7 @@ const STEPS = [
 
 export default function ImportacionPage() {
   return (
-    <div className="min-h-screen bg-[#0B1528] pt-32 pb-24">
+    <div className="min-h-screen bg-[#09090B] pt-32 pb-24">
       {/* Header */}
       <div className="max-w-4xl mx-auto px-6 md:px-12 text-center mb-24">
         <span className="font-script text-brand-oro text-5xl mb-4 block">Un proceso impecable</span>
@@ -68,7 +68,7 @@ export default function ImportacionPage() {
 
       {/* Guarantee Banner */}
       <div className="max-w-5xl mx-auto px-6 md:px-12 mt-32">
-        <div className="bg-[#040814] rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+        <div className="bg-[#040405] rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-10 mix-blend-luminosity" />
           <div className="relative z-10">
             <h2 className="font-heading text-4xl md:text-5xl font-semibold text-brand-cal mb-6">Tranquilidad Total</h2>

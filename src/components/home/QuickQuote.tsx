@@ -19,10 +19,10 @@ export default function QuickQuote() {
   const whatsappUrl = `https://wa.me/523326060218?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-[#0B1528] relative">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#09090B] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="bg-gradient-to-br from-[#101E38] via-[#0D182E] to-[#080F1E] rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-[#B8860B]/30 shadow-2xl relative overflow-hidden">
+        <div className="bg-gradient-to-br from-[#141417] via-[#0D182E] to-[#080F1E] rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 border border-[#B8860B]/30 shadow-2xl relative overflow-hidden">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
             
@@ -45,7 +45,7 @@ export default function QuickQuote() {
                     <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-white/40 block">Teléfono y WhatsApp de Ventas</span>
+                    <span className="text-[11px] text-white/70 block">Teléfono y WhatsApp de Ventas</span>
                     <a href="https://wa.me/523326060218" className="font-heading font-bold text-white hover:text-[#B8860B] transition-colors">
                       +52 33 2606 0218
                     </a>
@@ -57,7 +57,7 @@ export default function QuickQuote() {
                     <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                   <div>
-                    <span className="text-[11px] text-white/40 block">Caballerizas y Picadero</span>
+                    <span className="text-[11px] text-white/70 block">Caballerizas y Picadero</span>
                     <span className="text-white font-medium">Guadalajara, Jalisco, México</span>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ export default function QuickQuote() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#B8860B] text-[#0B1528] rounded-md font-bold text-xs uppercase tracking-wider shadow"
+                    className="inline-flex items-center gap-2 px-5 py-3 bg-[#B8860B] text-[#09090B] rounded-md font-bold text-xs uppercase tracking-wider shadow"
                   >
                     <MessageCircle className="w-4 h-4" /> Contactar por WhatsApp Ahora
                   </a>
@@ -91,13 +91,13 @@ export default function QuickQuote() {
                   </h3>
 
                   <div>
-                    <label className="text-[10px] sm:text-[11px] text-white/60 font-semibold uppercase tracking-wider block mb-1">
+                    <label className="text-[10px] sm:text-[11px] text-white/85 font-semibold uppercase tracking-wider block mb-1">
                       Tipo de Ejemplar Buscado
                     </label>
                     <select
                       value={horseType}
                       onChange={(e) => setHorseType(e.target.value)}
-                      className="w-full bg-[#101E38] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
+                      className="w-full bg-[#141417] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
                     >
                       <option value="Semental de Alta Escuela">Semental de Alta Escuela / Rienda</option>
                       <option value="Yegua de Cría Kroon">Yegua de Cría (Linaje Kroon / Model)</option>
@@ -109,13 +109,13 @@ export default function QuickQuote() {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="text-[10px] sm:text-[11px] text-white/60 font-semibold uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] sm:text-[11px] text-white/85 font-semibold uppercase tracking-wider block mb-1">
                         Rango de Presupuesto
                       </label>
                       <select
                         value={budget}
                         onChange={(e) => setBudget(e.target.value)}
-                        className="w-full bg-[#101E38] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
+                        className="w-full bg-[#141417] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
                       >
                         <option value="$800,000 - $1,000,000 MXN">$800,000 - $1,000,000 MXN</option>
                         <option value="$1,000,000 - $1,400,000 MXN">$1,000,000 - $1,400,000 MXN</option>
@@ -125,7 +125,7 @@ export default function QuickQuote() {
                     </div>
 
                     <div>
-                      <label className="text-[10px] sm:text-[11px] text-white/60 font-semibold uppercase tracking-wider block mb-1">
+                      <label className="text-[10px] sm:text-[11px] text-white/85 font-semibold uppercase tracking-wider block mb-1">
                         Estado de Entrega (México)
                       </label>
                       <input
@@ -133,13 +133,13 @@ export default function QuickQuote() {
                         value={clientState}
                         onChange={(e) => setClientState(e.target.value)}
                         placeholder="Ej. Jalisco, Querétaro, N.L."
-                        className="w-full bg-[#101E38] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
+                        className="w-full bg-[#141417] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-[10px] sm:text-[11px] text-white/60 font-semibold uppercase tracking-wider block mb-1">
+                    <label className="text-[10px] sm:text-[11px] text-white/85 font-semibold uppercase tracking-wider block mb-1">
                       Teléfono / WhatsApp *
                     </label>
                     <input
@@ -148,14 +148,14 @@ export default function QuickQuote() {
                       value={clientPhone}
                       onChange={(e) => setClientPhone(e.target.value)}
                       placeholder="+52 33 0000 0000"
-                      className="w-full bg-[#101E38] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
+                      className="w-full bg-[#141417] border border-white/15 rounded-lg px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-[#B8860B]"
                     />
                   </div>
 
                   <div className="pt-1">
                     <button
                       type="submit"
-                      className="w-full py-3 sm:py-3.5 bg-[#B8860B] hover:bg-[#D9B25A] text-[#0B1528] rounded-lg font-bold text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 shadow-lg"
+                      className="w-full py-3 sm:py-3.5 bg-[#B8860B] hover:bg-[#D9B25A] text-[#09090B] rounded-lg font-bold text-xs uppercase tracking-widest transition-colors flex items-center justify-center gap-2 shadow-lg"
                     >
                       <span>Solicitar Opciones de Compra</span>
                       <Send className="w-3.5 h-3.5" />

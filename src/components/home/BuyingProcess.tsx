@@ -31,7 +31,7 @@ const STEPS = [
 
 export default function BuyingProcess() {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-[#0B1528] relative border-b border-[#B8860B]/15">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#09090B] relative border-b border-[#B8860B]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
@@ -52,10 +52,10 @@ export default function BuyingProcess() {
             return (
               <div 
                 key={index}
-                className="bg-[#101E38] p-5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col justify-between"
+                className="bg-[#141417] p-5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-white/10 relative flex flex-col justify-between"
               >
                 <div className="flex justify-between items-center mb-4 sm:mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-[#B8860B] flex items-center justify-center text-[#0B1528] font-bold shadow-md">
+                  <div className="w-10 h-10 rounded-xl bg-[#B8860B] flex items-center justify-center text-[#09090B] font-bold shadow-md">
                     <Icon className="w-5 h-5" />
                   </div>
                   <span className="font-heading font-bold text-2xl sm:text-3xl text-white/20">

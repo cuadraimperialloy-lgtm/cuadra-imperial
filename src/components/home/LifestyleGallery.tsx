@@ -11,7 +11,7 @@ const B_ROLL_ITEMS = [
 
 export default function LifestyleGallery() {
   return (
-    <section className="min-h-[100dvh] w-full bg-[#0B1528] snap-start shrink-0 py-24 flex flex-col justify-center">
+    <section className="min-h-[100dvh] w-full bg-[#09090B] snap-start shrink-0 py-24 flex flex-col justify-center">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
           <div>
@@ -39,7 +39,7 @@ export default function LifestyleGallery() {
               fill 
               className="object-cover transition-transform duration-[2s] group-hover:scale-105 filter grayscale-[20%]"
             />
-            <div className="absolute inset-0 bg-[#040814]/30 group-hover:bg-brand-cuero/40 transition-colors duration-500" />
+            <div className="absolute inset-0 bg-[#040405]/30 group-hover:bg-brand-cuero/40 transition-colors duration-500" />
             
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <div className="w-20 h-20 rounded-full bg-white/5/20 backdrop-blur-md flex items-center justify-center border border-white/50 mb-4 scale-75 group-hover:scale-100 transition-transform duration-500">

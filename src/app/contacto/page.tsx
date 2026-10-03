@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function ContactoPage() {
   return (
-    <div className="min-h-screen bg-[#0B1528] pt-32 pb-24">
+    <div className="min-h-screen bg-[#09090B] pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
@@ -65,7 +65,7 @@ export default function ContactoPage() {
           </div>
 
           {/* Form */}
-          <div className="w-full lg:w-2/3 bg-[#040814] rounded-[3rem] p-10 md:p-16 shadow-2xl relative overflow-hidden">
+          <div className="w-full lg:w-2/3 bg-[#040405] rounded-[3rem] p-10 md:p-16 shadow-2xl relative overflow-hidden">
              <div className="absolute inset-0 bg-gradient-to-br from-black/80 to-transparent z-0" />
              <div className="relative z-10">
                <h2 className="font-heading text-3xl md:text-4xl text-brand-cal font-semibold mb-8">Envíanos un Mensaje</h2>

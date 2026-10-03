@@ -52,7 +52,7 @@ export default function BuyerGuarantees() {
             return (
               <div 
                 key={index}
-                className="bg-[#0B1528] p-5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-white/10 hover:border-[#B8860B]/40 transition-colors flex flex-col justify-between"
+                className="bg-[#09090B] p-5 sm:p-6 lg:p-7 rounded-xl sm:rounded-2xl border border-white/10 hover:border-[#B8860B]/40 transition-colors flex flex-col justify-between"
               >
                 <div>
                   <div className="flex justify-between items-start mb-4">

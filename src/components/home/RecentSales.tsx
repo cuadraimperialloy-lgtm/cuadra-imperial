@@ -50,7 +50,7 @@ export default function RecentSales() {
           {DELIVERIES.map((item, idx) => (
             <div 
               key={idx}
-              className="bg-[#0B1528] rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 flex flex-col shadow-lg"
+              className="bg-[#09090B] rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 flex flex-col shadow-lg"
             >
               <div className="relative aspect-[16/10] w-full bg-black/50">
                 <Image src={item.img} alt={item.horse} fill className="object-cover" />
@@ -73,7 +73,7 @@ export default function RecentSales() {
                     <span>Destino: <strong>{item.destination}</strong></span>
                   </div>
                   <div>
-                    <span className="text-white/50">Uso: </span>{item.use}
+                    <span className="text-white/75">Uso: </span>{item.use}
                   </div>
                 </div>
               </div>

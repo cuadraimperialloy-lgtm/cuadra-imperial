@@ -26,7 +26,7 @@ const HORSES = [
 
 export default function FeaturedHorses() {
   return (
-    <section className="py-24 bg-[#0B1528] relative">
+    <section className="py-24 bg-[#09090B] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-24">
           <h2 className="text-sm tracking-[0.3em] text-[#B8860B] uppercase font-semibold mb-4">
@@ -78,13 +78,13 @@ export default function FeaturedHorses() {
                     {horse.name}
                   </h3>
                   
-                  <p className="text-white/60 font-light leading-relaxed mb-8 text-lg">
+                  <p className="text-white/85 font-light leading-relaxed mb-8 text-lg">
                     {horse.description}
                   </p>
                   
                   <div className="flex items-center gap-8 mb-10">
                     <div>
-                      <p className="text-xs text-white/40 uppercase tracking-widest mb-1">Inversión</p>
+                      <p className="text-xs text-white/70 uppercase tracking-widest mb-1">Inversión</p>
                       <p className="text-2xl font-heading text-[#B8860B]">{horse.price}</p>
                     </div>
                   </div>
