@@ -129,7 +129,7 @@ export default function ChatConcierge() {
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             onClick={() => setIsOpen(true)}
-            className="cursor-pointer bg-[#09090B] border border-[#D4AF37]/50 rounded-2xl p-3.5 shadow-2xl max-w-xs text-xs text-white backdrop-blur-xl relative group hover:border-[#D4AF37]"
+            className="hidden sm:block cursor-pointer bg-[#09090B] border border-[#D4AF37]/50 rounded-2xl p-3.5 shadow-2xl max-w-xs text-xs text-white backdrop-blur-xl relative group hover:border-[#D4AF37]"
           >
             <div className="flex items-center gap-2 mb-1">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
