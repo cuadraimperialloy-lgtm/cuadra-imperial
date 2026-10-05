@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Horse, STATUS_COLORS } from "@/data/horses";
 import { useStore } from "@/context/StoreContext";
-import HorsePrice from "./HorsePrice";
 import { Heart, Scale, Eye, MapPin, Sparkles, ArrowRight, ShieldCheck } from "lucide-react";
 
 interface HorseCardTeaserProps {
@@ -186,18 +185,15 @@ export default function HorseCardTeaser({ horse }: HorseCardTeaserProps) {
           </div>
         </div>
 
-        {/* Price & Primary CTA */}
-        <div className="space-y-3 pt-2 border-t border-white/10">
-          <HorsePrice horse={horse} isCompact={true} />
-
-          {/* Main CTA: Ver detalles completos */}
+        {/* Main CTA: Ver más (Price only visible inside product sheet) */}
+        <div className="pt-3 border-t border-white/10">
           <button
             type="button"
             onClick={handleCardClick}
-            className="w-full py-2.5 px-4 bg-white/5 hover:bg-[#D4AF37]/15 hover:border-[#D4AF37] border border-white/15 rounded-lg text-xs font-semibold text-white hover:text-[#D4AF37] uppercase tracking-widest transition-all flex items-center justify-center gap-2 group-hover:bg-[#D4AF37]/10"
+            className="w-full py-3 px-4 bg-[#D4AF37] hover:bg-[#E8C678] text-[#050507] rounded-xl text-xs font-bold uppercase tracking-widest transition-all flex items-center justify-center gap-2 shadow-[0_4px_15px_rgba(212,175,55,0.25)] group-hover:shadow-[0_6px_25px_rgba(212,175,55,0.45)] active:scale-95"
           >
-            <span>Ver detalles completos</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            <span>Ver más</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </div>

@@ -213,6 +213,9 @@ export default function HorsePrice({ horse, isCompact = false }: HorsePriceProps
       </div>
 
       <div className="mt-4 pt-4 border-t border-white/5 flex flex-wrap items-center justify-between text-[11px] text-white/85 gap-2">
+        <span className="flex items-center gap-1.5 text-[#D4AF37] font-semibold">
+          <Check className="w-3.5 h-3.5 text-[#D4AF37]" /> Modalidad: 1 solo pago (1 exhibición · Sin MSI)
+        </span>
         <span className="flex items-center gap-1.5">
           <Check className="w-3.5 h-3.5 text-[#D4AF37]" /> Incluye 14 radiografías de exportación
         </span>

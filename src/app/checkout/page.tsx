@@ -190,7 +190,7 @@ export default function CheckoutPage() {
                 <strong className="block text-amber-300 font-heading text-sm mb-1">
                   Adquisición Equina de Alto Valor
                 </strong>
-                La compra de equinos requiere verificación oficial. Nuestro asesor ecuestre te contactará en un plazo máximo de 2 horas para coordinar la inspección veterinaria, contrato notariado y logística de transporte especializado en van acolchado.
+                La compra de equinos requiere verificación oficial. **Modalidad de pago obligatoria: 1 solo pago en 1 sola exhibición** (transferencia bancaria SPEI o contado; no aplican planes a MSI ni mensualidades diferidas). Nuestro director técnico te contactará para coordinar la inspección médica veterinaria, contrato notariado y logística de entrega en van VIP.
               </div>
             </div>
           )}
@@ -360,7 +360,7 @@ export default function CheckoutPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {[
                   { id: "Transferencia SPEI", label: "Transferencia Interbancaria SPEI", icon: Building },
-                  { id: "Mercado Pago", label: "Mercado Pago (Meses / Saldo)", icon: Wallet },
+                  { id: "Mercado Pago", label: "Mercado Pago (1 Exhibición / Saldo)", icon: Wallet },
                   { id: "Tarjeta Débito/Crédito", label: "Tarjeta de Crédito / Débito", icon: CreditCard },
                   { id: "PayPal", label: "PayPal Internacional", icon: ShieldCheck }
                 ].map((m) => {
