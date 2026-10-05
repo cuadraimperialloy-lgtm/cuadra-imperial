@@ -140,6 +140,10 @@ interface StoreContextType {
   // Proactive Chat Trigger
   proactiveChatTriggered: boolean;
   dismissProactiveChat: () => void;
+
+  // Language Selector
+  language: "es" | "en";
+  setLanguage: (lang: "es" | "en") => void;
 }
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
@@ -262,6 +266,23 @@ const INITIAL_ORDERS: Order[] = [
 ];
 
 export function StoreProvider({ children }: { children: React.ReactNode }) {
+  const [language, setLanguageState] = useState<"es" | "en">("es");
+
+  useEffect(() => {
+    try {
+      const savedLang = localStorage.getItem("cil_lang");
+      if (savedLang === "es" || savedLang === "en") {
+        setLanguageState(savedLang);
+      }
+    } catch {}
+  }, []);
+
+  const setLanguage = (lang: "es" | "en") => {
+    setLanguageState(lang);
+    try {
+      localStorage.setItem("cil_lang", lang);
+    } catch {}
+  };
   const [user, setUser] = useState<User | null>(null);
   const [role, setRoleState] = useState<Role>("CUSTOMER");
   const [leads, setLeads] = useState<Lead[]>(INITIAL_LEADS);
@@ -617,7 +638,9 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
         openSearch: () => setIsSearchOpen(true),
         closeSearch: () => setIsSearchOpen(false),
         proactiveChatTriggered,
-        dismissProactiveChat
+        dismissProactiveChat,
+        language,
+        setLanguage
       }}
     >
       {children}

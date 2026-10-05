@@ -18,7 +18,56 @@ import {
   ArrowRight
 } from "lucide-react";
 
-// Social Media Inline SVGs
+// Visual SVG Country Flags (Works with vibrant colors on ANY OS including Windows)
+export function MexicoFlag({ className = "w-5 h-3.5" }: { className?: string }) {
+  return (
+    <svg className={`inline-block rounded-[3px] overflow-hidden shadow-sm border border-white/20 ${className}`} viewBox="0 0 640 480">
+      <path fill="#006341" d="M0 0h213.3v480H0z"/>
+      <path fill="#ffffff" d="M213.3 0h213.4v480H213.3z"/>
+      <path fill="#c8102e" d="M426.7 0H640v480H426.7z"/>
+      {/* Golden Crest Emblem */}
+      <circle cx="320" cy="240" r="38" fill="#bfa044"/>
+      <path d="M320 215l8 18h18l-15 11 6 18-17-12-17 12 6-18-15-11h18z" fill="#4a3710"/>
+    </svg>
+  );
+}
+
+export function UsaFlag({ className = "w-5 h-3.5" }: { className?: string }) {
+  return (
+    <svg className={`inline-block rounded-[3px] overflow-hidden shadow-sm border border-white/20 ${className}`} viewBox="0 0 640 480">
+      <path fill="#bd3d44" d="M0 0h640v480H0z"/>
+      <path stroke="#ffffff" strokeWidth="37" d="M0 55.5h640M0 129.5h640M0 203.5h640M0 277.5h640M0 351.5h640M0 425.5h640"/>
+      <path fill="#192f5d" d="M0 0h260v260H0z"/>
+      {/* Stars preview */}
+      <circle cx="50" cy="50" r="10" fill="#fff"/>
+      <circle cx="100" cy="50" r="10" fill="#fff"/>
+      <circle cx="150" cy="50" r="10" fill="#fff"/>
+      <circle cx="200" cy="50" r="10" fill="#fff"/>
+      <circle cx="75" cy="100" r="10" fill="#fff"/>
+      <circle cx="125" cy="100" r="10" fill="#fff"/>
+      <circle cx="175" cy="100" r="10" fill="#fff"/>
+      <circle cx="50" cy="150" r="10" fill="#fff"/>
+      <circle cx="100" cy="150" r="10" fill="#fff"/>
+      <circle cx="150" cy="150" r="10" fill="#fff"/>
+      <circle cx="200" cy="150" r="10" fill="#fff"/>
+      <circle cx="75" cy="200" r="10" fill="#fff"/>
+      <circle cx="125" cy="200" r="10" fill="#fff"/>
+      <circle cx="175" cy="200" r="10" fill="#fff"/>
+    </svg>
+  );
+}
+
+export function NetherlandsFlag({ className = "w-5 h-3.5" }: { className?: string }) {
+  return (
+    <svg className={`inline-block rounded-[3px] overflow-hidden shadow-sm border border-white/20 ${className}`} viewBox="0 0 640 480">
+      <path fill="#ae1c28" d="M0 0h640v160H0z"/>
+      <path fill="#ffffff" d="M0 160h640v160H0z"/>
+      <path fill="#21468b" d="M0 320h640v160H0z"/>
+    </svg>
+  );
+}
+
+// Inline Social Media SVGs
 const FacebookIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -35,7 +84,15 @@ const InstagramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 
 const TikTokIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.77 1.52V6.82a4.85 4.85 0 0 1-1-.13z"/>
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.18 8.18 0 0 0 4.77 1.52V6.82a4.85 4.85 0 0 1-1-.13z"/>
+  </svg>
+);
+
+const GlobeIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10"/>
+    <line x1="2" x2="22" y1="12" y2="12"/>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
   </svg>
 );
 
@@ -53,7 +110,9 @@ export default function Navbar() {
     openCart,
     cartCount,
     wishlist,
-    openSearch
+    openSearch,
+    language,
+    setLanguage
   } = useStore();
 
   // Prevent background scrolling when mobile full-screen menu is open
@@ -69,11 +128,26 @@ export default function Navbar() {
   }, [isOpen]);
 
   const links = [
-    { name: "Caballos en Venta", href: "/ejemplares" },
-    { name: "Tienda", href: "/tienda" },
-    { name: "Garantía KFPS", href: "/importacion" },
-    { name: "La Cuadra", href: "/nosotros" },
-    { name: "Contacto", href: "/contacto" },
+    {
+      name: language === "en" ? "Horses for Sale" : "Caballos en Venta",
+      href: "/ejemplares"
+    },
+    {
+      name: language === "en" ? "Store" : "Tienda",
+      href: "/tienda"
+    },
+    {
+      name: language === "en" ? "KFPS Warranty" : "Garantía KFPS",
+      href: "/importacion"
+    },
+    {
+      name: language === "en" ? "The Stud" : "La Cuadra",
+      href: "/nosotros"
+    },
+    {
+      name: language === "en" ? "Contact" : "Contacto",
+      href: "/contacto"
+    },
   ];
 
   return (
@@ -86,7 +160,7 @@ export default function Navbar() {
             <BrandLogo />
 
             {/* Desktop Nav Links - Clean & Airy */}
-            <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-4">
+            <div className="hidden lg:flex items-center gap-5 xl:gap-7 ml-3">
               {links.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -110,22 +184,64 @@ export default function Navbar() {
               {(role === "SUPER_ADMIN" || role === "STAFF") && (
                 <Link
                   href="/admin"
-                  className="text-[11px] uppercase tracking-[0.18em] text-[#D4AF37] hover:text-[#E8C678] font-semibold transition-colors py-1 flex items-center gap-1 border border-[#D4AF37]/40 px-2.5 py-1 rounded-md bg-[#D4AF37]/5"
+                  className="text-[11px] uppercase tracking-[0.18em] text-[#D4AF37] hover:text-[#E8C678] font-semibold transition-colors py-1 flex items-center gap-1 border border-[#D4AF37]/40 px-2 py-1 rounded-md bg-[#D4AF37]/5"
                 >
-                  <span>Panel Admin</span>
+                  <span>Admin</span>
                 </Link>
               )}
             </div>
 
-            {/* Desktop Flags: Mexico, USA, Holanda */}
-            <div className="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs" title="Operación Internacional: México (Sede Guadalajara) · USA · Holanda (KFPS)">
-              <span className="text-sm cursor-help" title="México · Sede Guadalajara">🇲🇽</span>
-              <span className="text-sm cursor-help" title="USA · Tránsito y Cuarentena">🇺🇸</span>
-              <span className="text-sm cursor-help" title="Holanda · Origen KFPS Stamboek">🇳🇱</span>
+            {/* Desktop International Flags (100% VISUAL SVGs) */}
+            <div 
+              className="hidden xl:flex items-center gap-2.5 px-3 py-1 rounded-full bg-[#141417] border border-[#D4AF37]/35 shadow-inner" 
+              title="Operación Internacional: México (Sede Guadalajara) · USA (Cuarentena) · Holanda (KFPS Stamboek)"
+            >
+              <div className="flex items-center gap-1.5 cursor-help" title="México · Sede Guadalajara">
+                <MexicoFlag className="w-5 h-3.5" />
+                <span className="text-[10px] font-mono text-white/80 font-bold">MX</span>
+              </div>
+              <span className="text-white/20 text-[10px]">•</span>
+              <div className="flex items-center gap-1.5 cursor-help" title="USA · Tránsito y Cuarentena">
+                <UsaFlag className="w-5 h-3.5" />
+                <span className="text-[10px] font-mono text-white/80 font-bold">US</span>
+              </div>
+              <span className="text-white/20 text-[10px]">•</span>
+              <div className="flex items-center gap-1.5 cursor-help" title="Holanda · Origen KFPS Stamboek">
+                <NetherlandsFlag className="w-5 h-3.5" />
+                <span className="text-[10px] font-mono text-white/80 font-bold">NL</span>
+              </div>
+            </div>
+
+            {/* Desktop Language Selector (ES / EN) */}
+            <div className="hidden sm:flex items-center rounded-full bg-[#141417] border border-[#D4AF37]/40 p-0.5 shadow-sm">
+              <button
+                type="button"
+                onClick={() => setLanguage("es")}
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
+                  language === "es"
+                    ? "bg-[#D4AF37] text-[#050507] shadow-md"
+                    : "text-white/70 hover:text-white"
+                }`}
+                title="Cambiar idioma a Español"
+              >
+                <span>ES</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setLanguage("en")}
+                className={`flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider transition-all ${
+                  language === "en"
+                    ? "bg-[#D4AF37] text-[#050507] shadow-md"
+                    : "text-white/70 hover:text-white"
+                }`}
+                title="Switch language to English"
+              >
+                <span>EN</span>
+              </button>
             </div>
 
             {/* Desktop Social Links */}
-            <div className="hidden lg:flex items-center gap-2.5 text-white/70">
+            <div className="hidden lg:flex items-center gap-2 text-white/70">
               <a
                 href="https://www.facebook.com/CuadraImperialLoy/"
                 target="_blank"
@@ -266,7 +382,7 @@ export default function Navbar() {
                   className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg border border-[#D4AF37]/60 hover:border-[#D4AF37] text-white text-[11px] font-semibold uppercase tracking-wider hover:bg-white/5 transition-all"
                 >
                   <UserIcon className="w-3.5 h-3.5 text-[#D4AF37]" />
-                  <span>Acceso Compradores</span>
+                  <span>{language === "en" ? "Buyer Access" : "Acceso Compradores"}</span>
                 </button>
               )}
 
@@ -311,7 +427,7 @@ export default function Navbar() {
             </div>
 
             {/* Navigation Links - Large Luxury Typography */}
-            <div className="py-6 flex flex-col space-y-2">
+            <div className="py-5 flex flex-col space-y-1">
               {links.map((link) => {
                 const isActive = pathname === link.href;
                 return (
@@ -341,26 +457,71 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* International Flags: Mexico, USA, Holanda */}
+            {/* VISUAL FLAGS & INTERNATIONAL OPERATIONS */}
             <div className="py-4 border-t border-white/10">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold block mb-2 font-mono">
-                Presencia Internacional & Logística
-              </span>
-              <div className="flex flex-wrap items-center gap-2 text-xs">
-                <span className="px-3 py-1.5 rounded-full bg-[#141417] border border-white/10 text-white flex items-center gap-2">
-                  <span className="text-base">🇲🇽</span> México (Sede)
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold font-mono">
+                  Presencia Internacional
                 </span>
-                <span className="px-3 py-1.5 rounded-full bg-[#141417] border border-white/10 text-white flex items-center gap-2">
-                  <span className="text-base">🇺🇸</span> USA
+                <span className="text-[10px] text-white/50 font-mono">Sede · Tránsito · Origen</span>
+              </div>
+              <div className="grid grid-cols-3 gap-2 text-xs">
+                <div className="p-2.5 rounded-xl bg-[#141417] border border-[#D4AF37]/30 flex flex-col items-center gap-1.5 text-center shadow-sm">
+                  <MexicoFlag className="w-7 h-5 shadow" />
+                  <span className="font-bold text-white text-[11px]">México</span>
+                  <span className="text-[9px] text-[#D4AF37]">Guadalajara</span>
+                </div>
+                <div className="p-2.5 rounded-xl bg-[#141417] border border-white/10 flex flex-col items-center gap-1.5 text-center shadow-sm">
+                  <UsaFlag className="w-7 h-5 shadow" />
+                  <span className="font-bold text-white text-[11px]">USA</span>
+                  <span className="text-[9px] text-white/60">Cuarentena</span>
+                </div>
+                <div className="p-2.5 rounded-xl bg-[#141417] border border-white/10 flex flex-col items-center gap-1.5 text-center shadow-sm">
+                  <NetherlandsFlag className="w-7 h-5 shadow" />
+                  <span className="font-bold text-white text-[11px]">Holanda</span>
+                  <span className="text-[9px] text-blue-300">KFPS</span>
+                </div>
+              </div>
+            </div>
+
+            {/* SELECTOR DE IDIOMA: ESPAÑOL / INGLÉS */}
+            <div className="py-4 border-t border-white/10">
+              <div className="flex items-center gap-2 mb-2">
+                <GlobeIcon className="w-4 h-4 text-[#D4AF37]" />
+                <span className="text-[10px] uppercase tracking-[0.25em] text-white/70 font-bold font-mono">
+                  Selector de Idioma / Language
                 </span>
-                <span className="px-3 py-1.5 rounded-full bg-[#141417] border border-white/10 text-white flex items-center gap-2">
-                  <span className="text-base">🇳🇱</span> Holanda (KFPS)
-                </span>
+              </div>
+              <div className="grid grid-cols-2 gap-3">
+                <button
+                  type="button"
+                  onClick={() => setLanguage("es")}
+                  className={`py-2.5 px-4 rounded-xl border flex items-center justify-center gap-2 text-xs font-bold transition-all ${
+                    language === "es"
+                      ? "bg-[#D4AF37] text-[#050507] border-[#D4AF37] shadow-lg"
+                      : "bg-[#141417] text-white/80 border-white/10 hover:border-white/30"
+                  }`}
+                >
+                  <MexicoFlag className="w-4 h-3" />
+                  <span>Español (ES)</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setLanguage("en")}
+                  className={`py-2.5 px-4 rounded-xl border flex items-center justify-center gap-2 text-xs font-bold transition-all ${
+                    language === "en"
+                      ? "bg-[#D4AF37] text-[#050507] border-[#D4AF37] shadow-lg"
+                      : "bg-[#141417] text-white/80 border-white/10 hover:border-white/30"
+                  }`}
+                >
+                  <UsaFlag className="w-4 h-3" />
+                  <span>English (EN)</span>
+                </button>
               </div>
             </div>
 
             {/* Social Media Links: Facebook, Instagram, TikTok */}
-            <div className="py-4 border-t border-white/10 flex flex-col gap-3">
+            <div className="py-3 border-t border-white/10 flex flex-col gap-2.5">
               <span className="text-[10px] uppercase tracking-[0.25em] text-white/50 font-bold font-mono">
                 Redes Oficiales
               </span>
@@ -369,7 +530,7 @@ export default function Navbar() {
                   href="https://www.facebook.com/CuadraImperialLoy/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
+                  className="flex-1 py-2.5 px-2 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
                 >
                   <FacebookIcon className="w-4 h-4 text-[#D4AF37]" />
                   <span>Facebook</span>
@@ -378,7 +539,7 @@ export default function Navbar() {
                   href="https://www.instagram.com/cuadraimperialloy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
+                  className="flex-1 py-2.5 px-2 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
                 >
                   <InstagramIcon className="w-4 h-4 text-[#D4AF37]" />
                   <span>Instagram</span>
@@ -387,7 +548,7 @@ export default function Navbar() {
                   href="https://www.tiktok.com/@cuadraimperialloy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 py-2.5 px-3 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
+                  className="flex-1 py-2.5 px-2 rounded-xl bg-[#141417] border border-white/10 hover:border-[#D4AF37] text-white flex items-center justify-center gap-2 text-xs font-semibold transition-colors"
                 >
                   <TikTokIcon className="w-4 h-4 text-[#D4AF37]" />
                   <span>TikTok</span>
@@ -422,7 +583,7 @@ export default function Navbar() {
                   className="w-full py-3.5 border-2 border-[#D4AF37] text-white hover:bg-[#D4AF37]/10 rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 transition-colors"
                 >
                   <UserIcon className="w-4 h-4 text-[#D4AF37]" />
-                  <span>Acceso Compradores (Registro)</span>
+                  <span>{language === "en" ? "Buyer Access (Sign Up)" : "Acceso Compradores (Registro)"}</span>
                 </button>
               )}
 
@@ -433,7 +594,7 @@ export default function Navbar() {
                 className="w-full py-3.5 bg-[#D4AF37] hover:bg-[#E8C678] text-[#050507] rounded-xl font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-lg transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
-                <span>Contactar Asesor por WhatsApp</span>
+                <span>{language === "en" ? "Chat on WhatsApp" : "Contactar Asesor por WhatsApp"}</span>
               </a>
             </div>
 
